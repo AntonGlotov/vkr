@@ -70,6 +70,9 @@ def tf_idf_matrix(name, key, count_line):
             })
         )
         print(response.json())
+        with open('example.txt', 'a', encoding='utf-8') as file:
+
+                file.write(f'{str(response.json())}\n')
         if len(response.json()) > 3:
 
             with open('example.txt', 'a', encoding='utf-8') as file:
