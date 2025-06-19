@@ -228,7 +228,7 @@ else:
     correct_url = True
 # def func(user_input_url):
 if user_input_url and correct_url:
-    con = sqlite3.connect('C:/Универ/3 курс/Курсовая 2/Parcer1/my_database.sqlite3')
+    con = sqlite3.connect('my_database.sqlite3')
     cursor = con.cursor()
     cursor.execute('SELECT name, keywords, code_count FROM Articles WHERE link=?', (user_input_url,))
 
@@ -294,7 +294,7 @@ if user_input_url and correct_url:
 
 
 def dump_json_matrix(user_url):
-    con = sqlite3.connect('C:/Универ/3 курс/Курсовая 2/Parcer1/my_database.sqlite3')
+    con = sqlite3.connect('my_database.sqlite3')
     cursor = con.cursor()
     con.execute('SELECT keywords FROM Articles')
     x = cursor.fetchall()
