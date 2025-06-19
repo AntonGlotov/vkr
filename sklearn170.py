@@ -5,7 +5,7 @@ import sqlite3
 
 def tf_idf_matrix(name, key, count_line):
 
-    con = sqlite3.connect('C:/Универ/3 курс/Курсовая 2/Parcer1/my_database.sqlite3')
+    con = sqlite3.connect('my_database.sqlite3')
     cursor = con.cursor()
 
     cursor.execute('SELECT short_link, name, keywords, code_count FROM Articles LIMIT 1000')
