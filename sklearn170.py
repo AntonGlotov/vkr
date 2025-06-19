@@ -17,7 +17,7 @@ def tf_idf_matrix(name, key, count_line):
         response = requests.post(
             url="https://openrouter.ai/api/v1/chat/completions",
             headers={
-                "Authorization": "Bearer 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",
+                "Authorization": "Bearer https://github.com/AntonGlotov/vkr/blob/master/sklearn170.py",
                 "HTTP-Referer": "<YOUR_SITE_URL>",  # Optional. Site URL for rankings on openrouter.ai.
                 "X-Title": "<YOUR_SITE_NAME>",  # Optional. Site title for rankings on openrouter.ai.
             },
